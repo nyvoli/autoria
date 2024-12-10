@@ -82,6 +82,9 @@ p{
     margin-right: 40px;
     font-weight: bold;
 }
+.botao:hover{
+    cursor: pointer;
+}
 t{
     margin-left: 100px;
     color: #FFB3C6;

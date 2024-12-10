@@ -82,6 +82,9 @@ p{
     margin-right: 40px;
     font-weight: bold;
 }
+.botao:hover{
+    cursor: pointer;
+}
 t{
     margin-left: 100px;
     color: #FFB3C6;
@@ -91,4 +94,22 @@ a:link{
 }
 a:visited{
     color: #FA3869;
+}
+.name{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 130px;
+    padding-left: 10px;
+    margin-left: 40px;
+    font-size: 15px;
+    margin-bottom: 30px;
+    color: grey;
+    border-color: #FFC2D1;
+    border-radius: 7px;
+}
+.name:focus{
+    box-shadow: 0 0 0 0;
+    outline: 0;
+    transition: 300ms;
+    border-color: #FB6F92;
 }
