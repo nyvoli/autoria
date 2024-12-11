@@ -25,54 +25,16 @@
     font-style: normal;
 }
 p{
-    margin-top: 150px;
+    margin-top: 120px;
     padding-left: 30px;
     font-size: 30px;
-}
-
-.email{
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-right: 130px;
-    padding-left: 10px;
-    margin-left: 40px;
-    font-size: 15px;
-    margin-bottom: 30px;
-    color: grey;
-    border-color: #FFC2D1;
-    border-radius: 7px;
-}
-.email:focus{
-    box-shadow: 0 0 0 0;
-    outline: 0;
-    transition: 300ms;
-    border-color: #FB6F92;
-}
-.senha{
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-right: 130px;
-    padding-left: 10px;
-    margin-left: 40px;
-    font-size: 15px;
-    margin-bottom: 30px;
-    color: grey;
-    border-color: #FFC2D1;
-    border-radius: 7px;
-    
-}
-.senha:focus{
-    box-shadow: 0 0 0 0;
-    outline: 0;
-    transition: 300ms;
-    border-color: #FB6F92;
 }
 .botao{
     margin-left: 40px;
     font-size: 17px;
     color: white;
-    background-color: #FA3869;
-    border-color: #FA3869;
+    background-image: linear-gradient(to right, #FA3869, #FB6F92);
+    border: none;
     border-radius: 5px;
     padding-left: 140px;
     padding-right: 140px;
@@ -84,6 +46,8 @@ p{
 }
 .botao:hover{
     cursor: pointer;
+    background-image: linear-gradient(to right,  #FB6F92, #FA3869);
+
 }
 t{
     margin-left: 100px;
@@ -95,9 +59,12 @@ a:link{
 a:visited{
     color: #FA3869;
 }
-.name{
-    padding-top: 10px;
-    padding-bottom: 10px;
+.inputBox{
+    position: relative;
+}
+.inputUser{
+    padding-top: 14px;
+    padding-bottom: 14px;
     padding-right: 130px;
     padding-left: 10px;
     margin-left: 40px;
@@ -105,11 +72,26 @@ a:visited{
     margin-bottom: 30px;
     color: grey;
     border-color: #FFC2D1;
-    border-radius: 7px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    outline: none;
 }
-.name:focus{
+.inputUser:focus{
     box-shadow: 0 0 0 0;
     outline: 0;
     transition: 300ms;
-    border-color: #FB6F92;
+    border-color: #e74a72;
+    letter-spacing: 1px;
+}
+.labelInput{
+    position: absolute;
+    top: 11px;
+    left: 50px;
+    pointer-events: none;
+    transition: .3s;
+}
+.inputUser:focus ~ .labelInput, .inputUser:valid ~ .labelInput{
+    top: -3px;
+    font-size: 15px;
+    color: #FB6F92;
 }

@@ -16,12 +16,25 @@
         </div>
         <div id="item">
             <p>Criar Conta</p>
+            <div class="inputBox">
             <form action="">
-            <input type="text" class="name" value="Nome" required>
-            <input type="text" class="name" value="Sobrenome" required>    
-            <input type="email" class="email" value="E-mail" required> <br>
-            <input type="password" class="senha" value="Senha" required> <br>
-            <input type="submit" class="botao" value="Entrar" required>
+            <input type="text" name="name" id="name" class="inputUser" required> 
+            <label for="name" class="labelInput">Nome</label><br>
+            </div>
+            <div class="inputBox">
+            <input type="text" name="sname" id="sname" class="inputUser" required>   
+            <label for="sname" class="labelInput">Sobrenome</label><br> 
+        </div>
+            <div class="inputBox">
+            <input type="email" name="email" id="email" class="inputUser" required> 
+            <label for="email" class="labelInput">E-mail</label><br>
+        </div>
+        <div class="inputBox">
+            <input type="password" name="senha" id="senha" class="inputUser" required> 
+            <label for="senha" class="labelInput">Senha</label><br>
+        </div>
+            <input type="submit" id="botao" class="botao" value="Entrar" required>
+            <br>
             </form>
 
             <t>Já é um membro? <a href="login.html"> Faça Login!</a></t><br>
