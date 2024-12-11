@@ -17,7 +17,7 @@
         <div id="item">
             <p>Criar Conta</p>
             <div class="inputBox">
-            <form action="">
+        <form form id="formulário" onsubmit="return validacao()">
             <input type="text" name="name" id="name" class="inputUser" required> 
             <label for="name" class="labelInput">Nome</label><br>
             </div>
@@ -37,7 +37,34 @@
             <br>
             </form>
 
-            <t>Já é um membro? <a href="login.html"> Faça Login!</a></t><br>
+            <div id="error-message" style="color: red; display: none;">
+                <ul id="error-list"></ul>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function validacao() {
+            const password = document.getElementById('senha').value;
+            const firstname = document.getElementById('name').value;
+            const secondname = document.getElementById('sname').value;
+            const endemail = document.getElementById('email').value;
+
+
+        if (password.length < 8) {
+         alert("A senha deve ter mais que 8 caracteres")
+         return false;
+        } else if (firstname.length < 2 ){
+        alert("O nome deve ter mais que 2 caracteres")
+            return false
+        } else if (secondname.length < 2){
+            alert("O sobrenome deve ter mais que 2 caracteres")
+            return false;
+        }
+        return true;
+        }
+    </script>
+
 
         </div>
     </div>
