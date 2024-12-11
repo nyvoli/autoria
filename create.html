@@ -7,7 +7,33 @@
     <link rel="stylesheet" href="createstyle.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+
+        <script>
+            function validacao(event){
+            event.preventDefault();
+
+            const password = document.getElementById('senha').value;
+            const firstname = document.getElementById('name').value;
+            const secondname = document.getElementById('sname').value;
+            const endemail = document.getElementById('email').value;
+
+            // Validação dos campos
+            if (password.length < 8) {
+                alert("A senha deve ter mais que 8 caracteres");
+                return false;
+            } 
+            if (firstname.length < 2) {
+                alert("O nome deve ter mais que 2 caracteres");
+                return false;
+            }
+            if (secondname.length < 2) {
+                alert("O sobrenome deve ter mais que 2 caracteres");
+                return false;
+            } 
+            window.location.href = "login.html"; 
+            }
+        </script>
 </head>
 <body>
     <div class="main">
@@ -17,7 +43,7 @@
         <div id="item">
             <p>Criar Conta</p>
             <div class="inputBox">
-        <form form id="formulário" onsubmit="return validacao()">
+            <form id="formulário" onsubmit="validacao(event)" action="" method="post">
             <input type="text" name="name" id="name" class="inputUser" required> 
             <label for="name" class="labelInput">Nome</label><br>
             </div>
@@ -25,7 +51,7 @@
             <input type="text" name="sname" id="sname" class="inputUser" required>   
             <label for="sname" class="labelInput">Sobrenome</label><br> 
         </div>
-            <div class="inputBox">
+            <div class="inputBox">  
             <input type="email" name="email" id="email" class="inputUser" required> 
             <label for="email" class="labelInput">E-mail</label><br>
         </div>
@@ -33,39 +59,9 @@
             <input type="password" name="senha" id="senha" class="inputUser" required> 
             <label for="senha" class="labelInput">Senha</label><br>
         </div>
-            <input type="submit" id="botao" class="botao" value="Entrar" required>
+            <input type="submit" id="botao" class="botao" value="Entrar">
             <br>
             </form>
-
-            <div id="error-message" style="color: red; display: none;">
-                <ul id="error-list"></ul>
-            </div>
-        </div>
-    </div>
-
-    <script>
-        function validacao() {
-            const password = document.getElementById('senha').value;
-            const firstname = document.getElementById('name').value;
-            const secondname = document.getElementById('sname').value;
-            const endemail = document.getElementById('email').value;
-
-
-        if (password.length < 8) {
-         alert("A senha deve ter mais que 8 caracteres")
-         return false;
-        } else if (firstname.length < 2 ){
-        alert("O nome deve ter mais que 2 caracteres")
-            return false
-        } else if (secondname.length < 2){
-            alert("O sobrenome deve ter mais que 2 caracteres")
-            return false;
-        }
-        return true;
-        }
-    </script>
-
-
         </div>
     </div>
 </body>
