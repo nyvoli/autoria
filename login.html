@@ -7,8 +7,22 @@
     <link rel="stylesheet" href="loginstyle.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
-</head>
+      <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    
+      <script>
+        function validacao(event){
+        event.preventDefault();
+
+        const password = document.getElementById('senha').value;      
+        if (password.length < 8) {
+            alert("Senha inválida");
+            return false;
+        } 
+        window.location.href = "index.html"; 
+        }
+    </script>
+
+    </head>
 <body>
     <div class="main">
         <div id="item">
@@ -16,7 +30,7 @@
         </div>
         <div id="item">
             <p>Fazer Login</p>
-            <form action=>
+            <form id="formulário" onsubmit="validacao(event)" action="" method="post">
                 <div class="inputBox">
                     <input type="email" name="email" id="email" class="inputUser" required> 
                     <label for="email" class="labelInput">E-mail</label><br>

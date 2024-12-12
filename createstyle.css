@@ -10,8 +10,9 @@
     height: 600px;
     font-family: "nunito";
     border-bottom-left-radius: 7px;
+    border-top-right-radius: 7px;
     border-bottom-right-radius: 7px;
-    box-shadow: #FFC2D1 0px 1px 1px 0px, #FFD6E1 0px 50px 100px -20px, #FFB3C6 0px 30px 60px -30px; }
+    box-shadow: #FFC2D1 50px 50px 100px -20px, #FFD6E1 50px 50px 100px -20px, #FFB3C6 50px 30px 60px -30px; }
  .imagem{
     width: 450px;
     height: 600px;
