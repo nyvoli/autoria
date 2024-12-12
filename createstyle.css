@@ -12,7 +12,7 @@
     border-bottom-left-radius: 7px;
     border-top-right-radius: 7px;
     border-bottom-right-radius: 7px;
-    box-shadow: #FFC2D1 50px 50px 100px -20px, #FFD6E1 50px 50px 100px -20px, #FFB3C6 50px 30px 60px -30px; }
+    box-shadow: #EFBACA 50px 50px 100px -20px, #EFA7BD 50px 50px 100px -20px, #F094B0 50px 30px 60px -30px; }
  .imagem{
     width: 450px;
     height: 600px;
@@ -34,7 +34,7 @@ p{
     margin-left: 40px;
     font-size: 17px;
     color: white;
-    background-image: linear-gradient(to right, #FA3869, #FB6F92);
+    background-image: linear-gradient(to right, #EFA7BD, #F06E95);
     border: none;
     border-radius: 5px;
     padding-left: 140px;
@@ -47,18 +47,18 @@ p{
 }
 .botao:hover{
     cursor: pointer;
-    background-image: linear-gradient(to right,  #FB6F92, #FA3869);
+    background-image: linear-gradient(to right, #F06E95, #EFA7BD);
 
 }
 t{
     margin-left: 100px;
-    color: #FFB3C6;
+    color: #F081A2;
 }
 a:link{
-    color: #FFB3C6;
+    color: #F081A2;
 }
 a:visited{
-    color: #FA3869;
+    color: #F06E95;
 }
 .inputBox{
     position: relative;
@@ -72,7 +72,7 @@ a:visited{
     font-size: 15px;
     margin-bottom: 30px;
     color: grey;
-    border-color: #FFC2D1;
+    border-color: #F094B0;
     border-radius: 5px;
     letter-spacing: 1px;
     outline: none;
@@ -81,7 +81,7 @@ a:visited{
     box-shadow: 0 0 0 0;
     outline: 0;
     transition: 300ms;
-    border-color: #e74a72;
+    border-color: #F06E95;
     letter-spacing: 1px;
 }
 .labelInput{
@@ -94,5 +94,5 @@ a:visited{
 .inputUser:focus ~ .labelInput, .inputUser:valid ~ .labelInput{
     top: -3px;
     font-size: 15px;
-    color: #FB6F92;
+    color: #F06E95;
 }
